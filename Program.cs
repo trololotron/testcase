@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 namespace test_app
@@ -8,11 +8,9 @@ namespace test_app
         static void Main(string[] args)
         {
             Console.WriteLine("Input path to DLL!");
-            Console.ReadLine();
             //testcase
-            //var pathToFolder = "C:\\Users\\admin\\source\\repos\\ClassLibrary_test\\ClassLibrary_test\\bin\\Debug\\net5.0";
-            var pathToFolder = Console.ReadLine();
-            PrintClassMethods(pathToFolder);
+            //PrintClassMethods("C:\\Users\\admin\\source\\repos\\ClassLibrary_test\\ClassLibrary_test\\bin\\Debug\\net5.0");
+            PrintClassMethods(Console.ReadLine());
         }
 
         static void PrintClassMethods(string dllPath)
